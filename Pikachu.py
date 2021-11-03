@@ -289,7 +289,29 @@ async def start_revilbot():
         try:
             await ldk.start()
         except Exception as e:
-            pass                                                                                                                 
+            pass    
+if pikachu:
+        session_name = str(revilbotop)
+        print("String 10 Found")
+        ldk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 10")
+            await ldk.start()
+            botme = await ldk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 11 not Found")
+        pass
+        session_name = "startup"
+        ldk = TelegramClient(session_name, a, b)
+        try:
+            await cdk.start()
+        except Exception as e:
+            pass                                                                                                             
     
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_revilbot())       
