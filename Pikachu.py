@@ -331,8 +331,8 @@ async def gifspam(e, smex):
     except Exception as e:
         pass
 
-EVIL_PIC = "https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg"
-devs = [1787364816, 1787040289, 2031164360]
+PIKACHU_PIC = "https://telegra.ph/file/60cb5fc66426b50fd759e.jpg"
+devs = [1802044502, 1999004586]
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -344,12 +344,13 @@ devs = [1787364816, 1787040289, 2031164360]
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
-            bc = revilbot[0]
+            bc = pikachubot[0]
             bc = int(bc)
             text = "Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -374,22 +375,23 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!", "."):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(revilbot) == 2:
-            message = str(revilbot[1])
-            counter = int(revilbot[0])
+        if len(pikachubot) == 2:
+            message = str(pikachubot[1])
+            counter = int(pikachubot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(revilbot[0])
+            counter = int(pikachubot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             for _ in range(counter):
