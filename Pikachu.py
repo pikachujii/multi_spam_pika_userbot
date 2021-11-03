@@ -84,8 +84,8 @@ async def start_revilbot():
         except Exception as e:
             pass
    
-    if revill:
-        session_name = str(revill)
+    if pikachuji:
+        session_name = str(pikachuji)
         print("String 2 Found")
         ydk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -107,8 +107,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if revilll:
-        session_name = str(revilll)
+    if pikachujii:
+        session_name = str(pikachujii)
         print("String 3 Found")
         wdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -130,8 +130,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if revillll:
-        session_name = str(revillll)
+    if pikachujiii:
+        session_name = str(pikachujiii)
         print("String 4 Found")
         hdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -153,8 +153,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if revilllll:
-        session_name = str(revilllll)
+    if pikachujiiii:
+        session_name = str(pikachujiiii)
         print("String 5 Found")
         sdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -176,8 +176,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if revilop:
-        session_name = str(revilop)
+    if pikachujiiiii:
+        session_name = str(pikachujiiiii)
         print("String 6 Found")
         rdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -199,8 +199,8 @@ async def start_revilbot():
         except Exception as e:
             pass  
 
-    if revilopx:
-        session_name = str(revilopx)
+    if pikachujiiiiii:
+        session_name = str(pikachujiiiiii)
         print("String 7 Found")
         mdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -222,8 +222,8 @@ async def start_revilbot():
         except Exception as e:
             pass  
 
-    if revilopxx:
-        session_name = str(revilopxx)
+    if pikachujiiiiiii:
+        session_name = str(pikachujiiiiiii)
         print("String 8 Found")
         fdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -245,8 +245,8 @@ async def start_revilbot():
         except Exception as e:
             pass 
 
-    if revilopxxx:
-        session_name = str(revilopxxx)
+    if pikachujiiiiiiii:
+        session_name = str(pikachujiiiiiiii)
         print("String 9 Found")
         xdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -268,8 +268,8 @@ async def start_revilbot():
         except Exception as e:
             pass 
 
-    if revilbotop:
-        session_name = str(revilbotop)
+    if pikachujiiiiiiiii:
+        session_name = str(pikachujiiiiiiiii)
         print("String 10 Found")
         ldk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -291,7 +291,7 @@ async def start_revilbot():
         except Exception as e:
             pass    
 if pikachu:
-        session_name = str(revilbotop)
+        session_name = str(pikachu)
         print("String 10 Found")
         ldk = TelegramClient(StringSession(session_name), a, b)
         try:
