@@ -399,7 +399,7 @@ async def spam(e):
                 await gifspam(e, smex)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(revilbot[0])
+            counter = int(pikachubot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
@@ -417,19 +417,20 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.dspam <sleep time> <count> <message to spam>\n\n.dspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         smex = await e.get_reply_message()
-        revilbot = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        revilbotisop = revilbot[1:]
-        if len(revilbotisop) == 2:
-            message = str(revilbotisop[1])
-            counter = int(revilbotisop[0])
-            sleeptime = float(revilbot[0])
-            for _ in range(counter):
+        pikachubot = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+        pikachubotisop = pikachubot[1:]
+        if len(pikachbotisop) == 2:
+            message = str(pikachubotisop[1])
+            counter = int(pikachubotisop[0])
+            sleeptime = float(pikachubot[0])
+            for _ in range(counter)
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
                         await smex.reply(message)
@@ -437,8 +438,8 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(revilbotisop[0])
-            sleeptime = float(revilbot[0])
+            counter = int(pikachubotisop[0])
+            sleeptime = float(pikachubot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -446,8 +447,8 @@ async def spam(e):
                 await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(revilbotisop[0])
-            sleeptime = float(revilbot[0])
+            counter = int(pikachubotisop[0])
+            sleeptime = float(pikachubot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
@@ -466,16 +467,17 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴 𝗕𝗼𝘁 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(revilbot) == 2:
-            message = str(revilbot[1])
-            counter = int(revilbot[0])
+        if len(pikachubot) == 2:
+            message = str(pikachubot[1])
+            counter = int(pikachubot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -484,7 +486,7 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.3)
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(revilbot[0])
+            counter = int(pikachubot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -511,15 +513,16 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = CURSE \n\nCommand:\n\n.curse <count> <Username of User>\n\n.curse <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(revilbot) == 2:
-            message = str(revilbot[1])
+        if len(pikachubot) == 2:
+            message = str(pikachubot[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
@@ -532,7 +535,7 @@ async def spam(e):
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
-                counter = int(revilbot[0])
+                counter = int(pikachubot[0])
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{username} {reply}"
@@ -551,7 +554,7 @@ async def spam(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = b.first_name
-                counter = int(revilbot[0])
+                counter = int(pikachubot[0])
                 username = f"[{c}](tg://user?id={g})"
                 for _ in range(counter):
                     reply = random.choice(RAID)
@@ -576,6 +579,7 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True))
 @xdk.on(events.NewMessage(incoming=True))
 @ldk.on(events.NewMessage(incoming=True))
+@cdk.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -601,13 +605,14 @@ async def _(event):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
+@cdk.on(events.NewMessage(incoming=True) pattern=r"\.replycurse"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆curse\n\nCommand:\n\n.replycurse <Username of User>\n\n.replycurse <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 11:
             message = str(revilbot[0])
@@ -659,16 +664,17 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
+@cdk.on(events.NewMessage(incoming=True) pattern=r"\.dreplycurse"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆curse\n\nCommand:\n\n.dreplycurse <Username of User>\n\n.dreplycurse <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
-            message = str(revilbot[0])
+            message = str(pikachubot[0])
             a = await e.client.get_entity(message)
             g = a.id
             nm = a.first_name
@@ -710,6 +716,7 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@cdk.on(events.NewMessage(incoming=True) pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -731,6 +738,7 @@ async def ping(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝗥𝗲𝗯𝗼𝗼𝘁𝗲𝗱\n\nPlease wait till it reboots..."
@@ -779,16 +787,17 @@ async def restart(e):
         quit()
 
        
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@rdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@mdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@fdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@xdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
-@ldk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@rdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
         message_id = event.message.id
