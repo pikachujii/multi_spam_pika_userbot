@@ -797,13 +797,13 @@ async def restart(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
         message_id = event.message.id
         try:
             text = "👅 𝗥𝐄V𝐈𝗟 𝐒ᴘᴀ𝐌 𝐁ᴏ𝐓 [👅](https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg)\n\n\n ✧ ʀᴇᴠɪʟ sᴘᴀᴍ BᴏT ɪs ᴀʟɪᴠᴇ ✧\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : [JOIN](https://t.me/REVIL_BOT_SUPPORT)\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : [𝗥𝐄V𝐈𝗟](https://t.me/DARK_EAGLES_OWNER)\n ┗━━━━━━━━━━━━━━━━━━━\n\n 🖤 [𝐑𝐄𝐏𝐎](https://github.com/RevilhunterOp/REVILSPAMBOT) 🖤"
-            event = await event.client.send_file(event.chat_id, EVIL_PIC, caption = text, reply_to=message_id, link_preview=None )
+            event = await event.client.send_file(event.chat_id, PIKACHU_PIC, caption = text, reply_to=message_id, link_preview=None )
         except:
             text = "👅 𝗥𝐄V𝐈𝗟 𝐒ᴘᴀ𝐌 𝐁ᴏ𝐓 [👅](https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg)\n\n\n ✧ ʀᴇᴠɪʟ sᴘᴀᴍ BᴏT ɪs ᴀʟɪᴠᴇ ✧\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : [JOIN](https://t.me/REVIL_BOT_SUPPORT)\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : [𝗥𝐄V𝐈𝗟](https://t.me/DARK_EAGLES_OWNER)\n ┗━━━━━━━━━━━━━━━━━━━\n\n 🖤 [𝐑𝐄𝐏𝐎](https://github.com/RevilhunterOp/REVILSPAMBOT) 🖤"
             event = await event.reply(text, link_preview=None )
@@ -819,9 +819,10 @@ async def alive(event):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.evil\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.dspam\n.bigspam\n.curse\n.replycurse\n.dreplycurse\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.pika\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.dspam\n.bigspam\n.curse\n.replycurse\n.dreplycurse\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
@@ -838,7 +839,7 @@ text = """
 
 print(text)
 print("")
-print("Congrats REVIL MULTI SPAMBOT STARTED SUCCESSFULLY . TYPE .evil TO CHECK YOUR BOT'S STATUS")
+print("Congrats Pikachu MULTI SPAMBOT STARTED SUCCESSFULLY . TYPE .pika TO CHECK YOUR BOT'S STATUS")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
@@ -879,7 +880,11 @@ if len(sys.argv) not in (1, 3, 4):
     try:
         ldk.disconnect()
     except Exception as e:
-        pass                  
+        pass    
+    try:
+        cdk.disconnect()
+    except Exception as e:
+        pass              
 else:
     try:
         idk.run_until_disconnected()
@@ -919,5 +924,9 @@ else:
         pass 
     try:
         ldk.run_until_disconnected()
+    except Exception as e:
+        pass                 
+    try:
+        cdk.run_until_disconnected()
     except Exception as e:
         pass                 
