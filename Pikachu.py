@@ -28,7 +28,7 @@ pikachujiiiiii = STRING7
 pikachujiiiiiii = STRING8
 pikachujiiiiiiii = STRING9
 pikachujiiiiiiiii = STRING10
-pikachu = STRING11
+
 
 
 idk = ""
@@ -41,7 +41,7 @@ mdk = ""
 fdk = ""
 ldk = ""
 xdk = ""
-cdk = ""
+
 
 que = {}
 
@@ -60,7 +60,7 @@ async def start_revilbot():
     global fdk
     global ldk
     global xdk
-    global cdk
+    
     if smex:
         session_name = str(smex)
         print("String 1 Found")
@@ -289,29 +289,7 @@ async def start_revilbot():
         try:
             await ldk.start()
         except Exception as e:
-            pass    
-if pikachu:
-        session_name = str(pikachu)
-        print("String 10 Found")
-        ldk = TelegramClient(StringSession(session_name), a, b)
-        try:
-            print("Booting Up The Client 10")
-            await ldk.start()
-            botme = await ldk.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
-        except Exception as e:
-            print(e)
-            pass
-    else:
-        print("Session 11 not Found")
-        pass
-        session_name = "startup"
-        ldk = TelegramClient(session_name, a, b)
-        try:
-            await cdk.start()
-        except Exception as e:
-            pass                                                                                                             
+            pass                                                                                                                
     
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_revilbot())       
@@ -344,7 +322,6 @@ devs = [1802044502, 1999004586]
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
@@ -375,7 +352,6 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
@@ -417,7 +393,6 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.dspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.dspam <sleep time> <count> <message to spam>\n\n.dspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -467,7 +442,6 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴 𝗕𝗼𝘁 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -513,7 +487,6 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = CURSE \n\nCommand:\n\n.curse <count> <Username of User>\n\n.curse <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -579,7 +552,6 @@ async def spam(e):
 @fdk.on(events.NewMessage(incoming=True))
 @xdk.on(events.NewMessage(incoming=True))
 @ldk.on(events.NewMessage(incoming=True))
-@cdk.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -605,7 +577,6 @@ async def _(event):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.replycurse"))
-@cdk.on(events.NewMessage(incoming=True) pattern=r"\.replycurse"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆curse\n\nCommand:\n\n.replycurse <Username of User>\n\n.replycurse <reply to a User>"
@@ -664,7 +635,6 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.dreplycurse"))
-@cdk.on(events.NewMessage(incoming=True) pattern=r"\.dreplycurse"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆curse\n\nCommand:\n\n.dreplycurse <Username of User>\n\n.dreplycurse <reply to a User>"
@@ -716,7 +686,6 @@ async def _(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@cdk.on(events.NewMessage(incoming=True) pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -738,7 +707,6 @@ async def ping(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝗥𝗲𝗯𝗼𝗼𝘁𝗲𝗱\n\nPlease wait till it reboots..."
@@ -797,7 +765,6 @@ async def restart(e):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
         message_id = event.message.id
@@ -819,9 +786,8 @@ async def alive(event):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-async def help(e):
-    if e.sender_id in SMEX_USERS:
+    async def help(event):
+       if e.sender_id in SMEX_USERS:
        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.pika\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.dspam\n.bigspam\n.curse\n.replycurse\n.dreplycurse\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
@@ -881,10 +847,7 @@ if len(sys.argv) not in (1, 3, 4):
         ldk.disconnect()
     except Exception as e:
         pass    
-    try:
-        cdk.disconnect()
-    except Exception as e:
-        pass              
+ 
 else:
     try:
         idk.run_until_disconnected()
@@ -926,7 +889,4 @@ else:
         ldk.run_until_disconnected()
     except Exception as e:
         pass                 
-    try:
-        cdk.run_until_disconnected()
-    except Exception as e:
-        pass                 
+    
