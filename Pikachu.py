@@ -19,15 +19,15 @@ from telegram import ParseMode
 a = API_ID
 b = API_HASH
 smex = STRING
-revill = STRING2
-revilll = STRING3
-revillll = STRING4
-revilllll = STRING5
-revilop = STRING6
-revilopx = STRING7
-revilopxx = STRING8
-revilopxxx = STRING9
-revilbotop = STRING10
+pikachuji = STRING2
+pikachujii = STRING3
+pikachujiii = STRING4
+pikachujiiii = STRING5
+pikachujiiiii = STRING6
+pikachujiiiiii = STRING7
+pikachujiiiiiii = STRING8
+pikachujiiiiiiii = STRING9
+pikachujiiiiiiiii = STRING10
 pikachu = STRING11
 
 
@@ -41,7 +41,7 @@ mdk = ""
 fdk = ""
 ldk = ""
 xdk = ""
-
+cdk = ""
 
 que = {}
 
@@ -60,6 +60,7 @@ async def start_revilbot():
     global fdk
     global ldk
     global xdk
+    global cdk
     if smex:
         session_name = str(smex)
         print("String 1 Found")
@@ -71,7 +72,7 @@ async def start_revilbot():
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            idk = "revil"
+            idk = "pikachu"
             print(e)
             pass
     else:
