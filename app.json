@@ -63,11 +63,6 @@
         "value": "",
         "required": false
       },
-      "STRING11": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
       "API_HASH": {
         "description": "Api Hash",
         "value": "",
