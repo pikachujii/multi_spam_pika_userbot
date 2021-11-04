@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5 ,STRING6 ,STRING7 ,STRING8 ,STRING9 ,STRING10 ,STRING11
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5 ,STRING6 ,STRING7 ,STRING8 ,STRING9 ,STRING10
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -19,16 +19,15 @@ from telegram import ParseMode
 a = API_ID
 b = API_HASH
 smex = STRING
-pikachuji = STRING2
-pikachujii = STRING3
-pikachujiii = STRING4
-pikachujiiii = STRING5
-pikachujiiiii = STRING6
-pikachujiiiiii = STRING7
-pikachujiiiiiii = STRING8
-pikachujiiiiiiii = STRING9
-pikachujiiiiiiiii = STRING10
-
+revill = STRING2
+revilll = STRING3
+revillll = STRING4
+revilllll = STRING5
+revilop = STRING6
+revilopx = STRING7
+revilopxx = STRING8
+revilopxxx = STRING9
+revilbotop = STRING10
 
 
 idk = ""
@@ -60,7 +59,6 @@ async def start_revilbot():
     global fdk
     global ldk
     global xdk
-    
     if smex:
         session_name = str(smex)
         print("String 1 Found")
@@ -72,7 +70,7 @@ async def start_revilbot():
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            idk = "pikachu"
+            idk = "revil"
             print(e)
             pass
     else:
@@ -84,8 +82,8 @@ async def start_revilbot():
         except Exception as e:
             pass
    
-    if pikachuji:
-        session_name = str(pikachuji)
+    if revill:
+        session_name = str(revill)
         print("String 2 Found")
         ydk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -107,8 +105,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if pikachujii:
-        session_name = str(pikachujii)
+    if revilll:
+        session_name = str(revilll)
         print("String 3 Found")
         wdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -130,8 +128,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if pikachujiii:
-        session_name = str(pikachujiii)
+    if revillll:
+        session_name = str(revillll)
         print("String 4 Found")
         hdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -153,8 +151,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if pikachujiiii:
-        session_name = str(pikachujiiii)
+    if revilllll:
+        session_name = str(revilllll)
         print("String 5 Found")
         sdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -176,8 +174,8 @@ async def start_revilbot():
         except Exception as e:
             pass
 
-    if pikachujiiiii:
-        session_name = str(pikachujiiiii)
+    if revilop:
+        session_name = str(revilop)
         print("String 6 Found")
         rdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -199,8 +197,8 @@ async def start_revilbot():
         except Exception as e:
             pass  
 
-    if pikachujiiiiii:
-        session_name = str(pikachujiiiiii)
+    if revilopx:
+        session_name = str(revilopx)
         print("String 7 Found")
         mdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -222,8 +220,8 @@ async def start_revilbot():
         except Exception as e:
             pass  
 
-    if pikachujiiiiiii:
-        session_name = str(pikachujiiiiiii)
+    if revilopxx:
+        session_name = str(revilopxx)
         print("String 8 Found")
         fdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -245,8 +243,8 @@ async def start_revilbot():
         except Exception as e:
             pass 
 
-    if pikachujiiiiiiii:
-        session_name = str(pikachujiiiiiiii)
+    if revilopxxx:
+        session_name = str(revilopxxx)
         print("String 9 Found")
         xdk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -268,8 +266,8 @@ async def start_revilbot():
         except Exception as e:
             pass 
 
-    if pikachujiiiiiiiii:
-        session_name = str(pikachujiiiiiiiii)
+    if revilbotop:
+        session_name = str(revilbotop)
         print("String 10 Found")
         ldk = TelegramClient(StringSession(session_name), a, b)
         try:
@@ -289,7 +287,7 @@ async def start_revilbot():
         try:
             await ldk.start()
         except Exception as e:
-            pass                                                                                                                
+            pass                                                                                                                 
     
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_revilbot())       
@@ -309,8 +307,8 @@ async def gifspam(e, smex):
     except Exception as e:
         pass
 
-PIKACHU_PIC = "https://telegra.ph/file/60cb5fc66426b50fd759e.jpg"
-devs = [1802044502, 1999004586]
+EVIL_PIC = "https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg"
+devs = [1787364816, 1787040289, 2031164360]
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -325,9 +323,9 @@ devs = [1802044502, 1999004586]
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
-            bc = pikachubot[0]
+            bc = revilbot[0]
             bc = int(bc)
             text = "Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -356,18 +354,18 @@ async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝘽𝙤𝙩𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!", "."):
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(pikachubot) == 2:
-            message = str(pikachubot[1])
-            counter = int(pikachubot[0])
+        if len(revilbot) == 2:
+            message = str(revilbot[1])
+            counter = int(revilbot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(pikachubot[0])
+            counter = int(revilbot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             for _ in range(counter):
@@ -375,7 +373,7 @@ async def spam(e):
                 await gifspam(e, smex)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(pikachubot[0])
+            counter = int(revilbot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
@@ -399,13 +397,13 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         smex = await e.get_reply_message()
-        pikachubot = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        pikachubotisop = pikachubot[1:]
-        if len(pikachbotisop) == 2:
-            message = str(pikachubotisop[1])
-            counter = int(pikachubotisop[0])
-            sleeptime = float(pikachubot[0])
-            for _ in range(counter)
+        revilbot = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+        revilbotisop = revilbot[1:]
+        if len(revilbotisop) == 2:
+            message = str(revilbotisop[1])
+            counter = int(revilbotisop[0])
+            sleeptime = float(revilbot[0])
+            for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
                         await smex.reply(message)
@@ -413,8 +411,8 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(pikachubotisop[0])
-            sleeptime = float(pikachubot[0])
+            counter = int(revilbotisop[0])
+            sleeptime = float(revilbot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -422,8 +420,8 @@ async def spam(e):
                 await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(pikachubotisop[0])
-            sleeptime = float(pikachubot[0])
+            counter = int(revilbotisop[0])
+            sleeptime = float(revilbot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
@@ -447,11 +445,11 @@ async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(pikachubot) == 2:
-            message = str(pikachubot[1])
-            counter = int(pikachubot[0])
+        if len(revilbot) == 2:
+            message = str(revilbot[1])
+            counter = int(revilbot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -460,7 +458,7 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.3)
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(pikachubot[0])
+            counter = int(revilbot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -492,10 +490,10 @@ async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(pikachubot) == 2:
-            message = str(pikachubot[1])
+        if len(revilbot) == 2:
+            message = str(revilbot[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
@@ -508,7 +506,7 @@ async def spam(e):
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
-                counter = int(pikachubot[0])
+                counter = int(revilbot[0])
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{username} {reply}"
@@ -527,7 +525,7 @@ async def spam(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = b.first_name
-                counter = int(pikachubot[0])
+                counter = int(revilbot[0])
                 username = f"[{c}](tg://user?id={g})"
                 for _ in range(counter):
                     reply = random.choice(RAID)
@@ -583,7 +581,7 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 11:
             message = str(revilbot[0])
@@ -641,10 +639,10 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        pikachubot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        revilbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
-            message = str(pikachubot[0])
+            message = str(revilbot[0])
             a = await e.client.get_entity(message)
             g = a.id
             nm = a.first_name
@@ -755,22 +753,22 @@ async def restart(e):
         quit()
 
        
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@rdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@mdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@fdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@xdk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
-@ldk.on(events.NewMessage(incoming=True, pattern=r"\.pika"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@rdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
+@ldk.on(events.NewMessage(incoming=True, pattern=r"\.evil"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
         message_id = event.message.id
         try:
             text = "👅 𝗥𝐄V𝐈𝗟 𝐒ᴘᴀ𝐌 𝐁ᴏ𝐓 [👅](https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg)\n\n\n ✧ ʀᴇᴠɪʟ sᴘᴀᴍ BᴏT ɪs ᴀʟɪᴠᴇ ✧\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : [JOIN](https://t.me/REVIL_BOT_SUPPORT)\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : [𝗥𝐄V𝐈𝗟](https://t.me/DARK_EAGLES_OWNER)\n ┗━━━━━━━━━━━━━━━━━━━\n\n 🖤 [𝐑𝐄𝐏𝐎](https://github.com/RevilhunterOp/REVILSPAMBOT) 🖤"
-            event = await event.client.send_file(event.chat_id, PIKACHU_PIC, caption = text, reply_to=message_id, link_preview=None )
+            event = await event.client.send_file(event.chat_id, EVIL_PIC, caption = text, reply_to=message_id, link_preview=None )
         except:
             text = "👅 𝗥𝐄V𝐈𝗟 𝐒ᴘᴀ𝐌 𝐁ᴏ𝐓 [👅](https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg)\n\n\n ✧ ʀᴇᴠɪʟ sᴘᴀᴍ BᴏT ɪs ᴀʟɪᴠᴇ ✧\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : [JOIN](https://t.me/REVIL_BOT_SUPPORT)\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : [𝗥𝐄V𝐈𝗟](https://t.me/DARK_EAGLES_OWNER)\n ┗━━━━━━━━━━━━━━━━━━━\n\n 🖤 [𝐑𝐄𝐏𝐎](https://github.com/RevilhunterOp/REVILSPAMBOT) 🖤"
             event = await event.reply(text, link_preview=None )
@@ -786,9 +784,9 @@ async def alive(event):
 @fdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @xdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ldk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-    async def help(event):
-       if e.sender_id in SMEX_USERS:
-       text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.pika\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.dspam\n.bigspam\n.curse\n.replycurse\n.dreplycurse\n\n\nFor more help regarding usage of plugins type plugins name"
+async def help(e):
+    if e.sender_id in SMEX_USERS:
+       text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.evil\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.dspam\n.bigspam\n.curse\n.replycurse\n.dreplycurse\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
@@ -805,7 +803,7 @@ text = """
 
 print(text)
 print("")
-print("Congrats Pikachu MULTI SPAMBOT STARTED SUCCESSFULLY . TYPE .pika TO CHECK YOUR BOT'S STATUS")
+print("Congrats REVIL MULTI SPAMBOT STARTED SUCCESSFULLY . TYPE .evil TO CHECK YOUR BOT'S STATUS")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
@@ -846,8 +844,7 @@ if len(sys.argv) not in (1, 3, 4):
     try:
         ldk.disconnect()
     except Exception as e:
-        pass    
- 
+        pass                  
 else:
     try:
         idk.run_until_disconnected()
@@ -888,5 +885,4 @@ else:
     try:
         ldk.run_until_disconnected()
     except Exception as e:
-        pass                 
-    
+        pass                  
